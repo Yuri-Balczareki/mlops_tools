@@ -1,0 +1,23 @@
+FROM python:3.8-slim  
+
+# With arg 
+ARG DEV_MODE=0 
+
+# Static variable 
+ENV SOME_ENV='value of some environment variable'
+
+# Bash commands . Se use -y to accept the commands on bash 
+RUN apt-get update -y && apt-get install -y vim 
+
+# Copy: Copy files from your folder to container 
+COPY ./some_text.txt / 
+
+# WORKDIR: Similar to cd commands. 
+WORKDIR / 
+
+# Volume path. We can give it a name 
+VOLUME /my-persistent-data 
+
+# CMD specify a list of strings of comands to run when starting my container 
+CMD ["/bin/bash"] 
+
