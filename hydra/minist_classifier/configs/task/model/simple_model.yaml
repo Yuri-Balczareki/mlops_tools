@@ -1,4 +1,3 @@
-# @package task.model
 
 defaults:
   - backbone: resnet18

@@ -1,6 +1,5 @@
 
 _target_: torch.optim.SGD
 _partial_: true
-lr: 0.01  # Learning rate, adjust based on your task
-momentum: 0.9  # Commonly used momentum value for SGD
-weight_decay: 0.0005  # Regularization term, adjust if necessary
+lr: 5e-5
+weight_decay: 0.2

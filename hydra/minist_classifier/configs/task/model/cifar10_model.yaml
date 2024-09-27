@@ -1,8 +1,7 @@
-# @package task.model
 
 defaults:
   - backbone: resnet50
   - adapter: linear_2048_10
   - head: identity_head
 
-_target_: models.CIFAR10Model 
+_target_: models.CIFAR10Model

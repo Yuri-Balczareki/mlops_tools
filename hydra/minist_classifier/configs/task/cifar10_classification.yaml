@@ -1,4 +1,3 @@
-
 defaults:
   - model: cifar10_model
   - optimizer: sgd

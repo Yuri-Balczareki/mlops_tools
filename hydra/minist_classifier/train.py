@@ -4,6 +4,9 @@ from omegaconf import DictConfig
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import TensorBoardLogger 
 
+from config_schemas.config_schema import setup_config
+
+setup_config()
 
 @hydra.main(config_path="configs", config_name="config", version_base=None)
 def train(config: DictConfig) -> None: 

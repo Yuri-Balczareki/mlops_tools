@@ -1,3 +1,2 @@
-# @package task.loss_function
 
 _target_: loss_functions.CrossEntropyLoss

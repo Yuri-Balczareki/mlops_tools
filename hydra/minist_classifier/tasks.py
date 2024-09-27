@@ -15,7 +15,7 @@ class TrainingTask(pl.LightningModule):
         return self.optimizer(self.parameters())
 
 
-class MNISTClassification(TrainingTask):
+class MNISTClassificationTrainingTask(TrainingTask):
     def __init__(self, model: nn.Module, optimizer: PARTIAL_OPTIMIZER_TYPE, loss_function: nn.Module) -> None:
         super().__init__(optimizer)
 
